@@ -52,7 +52,7 @@ a:hover{
 }
 
 .left{
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('images/AdobeStock_318531097.jpeg');
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('/img/FondoLogin.jpeg');
     background-size: cover;
 }
 
@@ -106,10 +106,24 @@ label{
 
 .input-container.password i{
     position: absolute;
+    top: 42px;
+    right: 16px;
+}
+
+.checkbox-container input{
+    position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
-    width: 0;
+}
+
+.checkbox-container{
+    display: block;
+    position: relative;
+    padding-left: 2rem;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 0 1.25rem 0;
 }
 
 .checkbox-container input:checked~.checkmark{
@@ -164,4 +178,17 @@ label{
 
 .signup-btn:hover{
     background: #2c4893;
+}
+
+@media screen and (min-width: 900px){
+    .split-screen{
+        flex-direction: row;
+        height: 100vh;
+    }
+    .left,
+    .right{
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
 }

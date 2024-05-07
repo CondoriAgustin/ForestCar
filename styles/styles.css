@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.contenedor{
+    padding-top: 20px;
+    display: flex;
+}
+
+.mapa{
+    margin: 0px 15px;
+}
+
+.dondeEstamos{
+    color: white;
+}
+
+.links{
+    cursor: not-allowed;
+    pointer-events: none;
+}
