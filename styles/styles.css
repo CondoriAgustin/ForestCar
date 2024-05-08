@@ -3,18 +3,40 @@
     margin: 0;
 }
 
-
-.contenedor{
-    padding-top: 20px;
+.contenedor {
     display: flex;
+    flex-direction: column;
 }
 
-.mapa{
-    margin: 0px 15px;
+.mapa, .texto {
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-.dondeEstamos{
-    color: white;
+@media screen and (min-width: 768px) {
+    .contenedor {
+        flex-direction: row;
+    }
+
+    .mapa {
+        width: 50%;
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    .texto {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mapa {
+        max-width: 100%; /* Establecemos un ancho máximo para el contenedor del mapa en dispositivos móviles */
+    }
+    
+    .mapa iframe {
+        max-width: 100%; /* Establecemos un ancho máximo para el mapa dentro del iframe en dispositivos móviles */
+    }
 }
 
 .links{
